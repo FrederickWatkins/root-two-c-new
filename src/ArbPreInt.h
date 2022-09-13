@@ -13,6 +13,12 @@ void ArbPreInt_init(ArbPreInt *x);
 // Free all memory allocated to x
 void ArbPreInt_free(ArbPreInt *x);
 
+// Set x back to zero
+void ArbPreInt_clear(ArbPreInt *x);
+
+// Remove all redundant leading zeros from x
+void ArbPreInt_prune(ArbPreInt *x);
+
 // Return x < y
 bool ArbPreInt_lessThan(ArbPreInt x, ArbPreInt y);
 
