@@ -61,7 +61,7 @@ void DynamicArray_clear(DynamicArray *arr)
 
 u_int32_t DynamicArray_at(DynamicArray *arr, size_t i)
 {
-	if(i >= arr->size){
+	if (i >= arr->size) {
 		printf("Attempted to access value at index higher than size of array");
 		exit(EXIT_FAILURE);
 	}
