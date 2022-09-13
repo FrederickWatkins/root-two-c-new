@@ -1,5 +1,6 @@
 #pragma once
 
+#include <stdbool.h>
 #include "DynamicArray.h"
 
 typedef struct ArbPreInt {
@@ -7,10 +8,10 @@ typedef struct ArbPreInt {
 } ArbPreInt;
 
 // Initialize x
-void ArbPreInt_init(ArbPreInt* x);
+void ArbPreInt_init(ArbPreInt *x);
 
 // Free all memory allocated to x
-void ArbPreInt_free(ArbPreInt* x);
+void ArbPreInt_free(ArbPreInt *x);
 
 // Return x < y
 bool ArbPreInt_lessThan(ArbPreInt x, ArbPreInt y);
